@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mujoco model="partnet_8c726f9c-876e-4583-89ae-4255711b14f0">
+  <compiler angle="radian"/>
+  <asset>
+    <mesh name="original_2" content_type="model/obj" file="textured_objs/original_2.obj"/>
+    <mesh name="original_4" content_type="model/obj" file="textured_objs/original_4.obj"/>
+    <mesh name="original_6" content_type="model/obj" file="textured_objs/original_6.obj"/>
+    <mesh name="original_3" content_type="model/obj" file="textured_objs/original_3.obj"/>
+    <mesh name="original_11" content_type="model/obj" file="textured_objs/original_11.obj"/>
+    <mesh name="original_9" content_type="model/obj" file="textured_objs/original_9.obj"/>
+    <mesh name="original_7" content_type="model/obj" file="textured_objs/original_7.obj"/>
+    <mesh name="original_10" content_type="model/obj" file="textured_objs/original_10.obj"/>
+  </asset>
+  <worldbody>
+    <body name="base">
+      <body name="link_2" quat="0.5 0.5 -0.5 -0.5">
+        <geom type="mesh" mesh="original_9"/>
+        <geom type="mesh" mesh="original_7"/>
+        <geom type="mesh" mesh="original_10"/>
+        <body name="link_1_helper" pos="0.00574696 0 -0.00772598">
+          <inertial pos="0 0 0" mass="1e-06" diaginertia="1e-10 1e-10 1e-10"/>
+          <joint name="joint_4" pos="0 0 0" axis="0 1 0" type="slide" range="0 0.02"/>
+          <body name="link_1">
+            <joint name="joint_1" pos="0 0 0" axis="0 -1 0"/>
+            <geom pos="-0.00574696 0 0.00772598" quat="1 0 0 0" type="mesh" mesh="original_6"/>
+            <geom pos="-0.00574696 0 0.00772598" quat="1 0 0 0" type="mesh" mesh="original_3"/>
+            <geom pos="-0.00574696 0 0.00772598" quat="1 0 0 0" type="mesh" mesh="original_11"/>
+            <body name="link_0_helper" pos="-0.000536394 0 -0.0452744">
+              <inertial pos="0 0 0" mass="1e-06" diaginertia="1e-10 1e-10 1e-10"/>
+              <joint name="joint_3" pos="0 0 0" axis="0 -1 0" type="slide" range="0 0.2"/>
+              <body name="link_0">
+                <joint name="joint_0" pos="0 0 0" axis="0 1 0"/>
+                <geom pos="-0.00521057 0 0.0530004" quat="1 0 0 0" type="mesh" mesh="original_2"/>
+                <geom pos="-0.00521057 0 0.0530004" quat="1 0 0 0" type="mesh" mesh="original_4"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

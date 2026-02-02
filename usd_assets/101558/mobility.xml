@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mujoco model="partnet_d0718456507d8b0050da8b99982a3057">
+  <compiler angle="radian"/>
+  <asset>
+    <mesh name="original_90" content_type="model/obj" file="textured_objs/original_90.obj"/>
+    <mesh name="original_116" content_type="model/obj" file="textured_objs/original_116.obj"/>
+    <mesh name="original_99" content_type="model/obj" file="textured_objs/original_99.obj"/>
+    <mesh name="original_100" content_type="model/obj" file="textured_objs/original_100.obj"/>
+    <mesh name="original_101" content_type="model/obj" file="textured_objs/original_101.obj"/>
+    <mesh name="original_66" content_type="model/obj" file="textured_objs/original_66.obj"/>
+    <mesh name="original_68" content_type="model/obj" file="textured_objs/original_68.obj"/>
+    <mesh name="original_93" content_type="model/obj" file="textured_objs/original_93.obj"/>
+    <mesh name="original_69" content_type="model/obj" file="textured_objs/original_69.obj"/>
+    <mesh name="original_89" content_type="model/obj" file="textured_objs/original_89.obj"/>
+    <mesh name="original_77" content_type="model/obj" file="textured_objs/original_77.obj"/>
+    <mesh name="original_80" content_type="model/obj" file="textured_objs/original_80.obj"/>
+    <mesh name="original_78" content_type="model/obj" file="textured_objs/original_78.obj"/>
+    <mesh name="original_83" content_type="model/obj" file="textured_objs/original_83.obj"/>
+    <mesh name="original_87" content_type="model/obj" file="textured_objs/original_87.obj"/>
+    <mesh name="original_84" content_type="model/obj" file="textured_objs/original_84.obj"/>
+    <mesh name="original_86" content_type="model/obj" file="textured_objs/original_86.obj"/>
+    <mesh name="original_65" content_type="model/obj" file="textured_objs/original_65.obj"/>
+    <mesh name="original_70" content_type="model/obj" file="textured_objs/original_70.obj"/>
+    <mesh name="original_50" content_type="model/obj" file="textured_objs/original_50.obj"/>
+    <mesh name="original_88" content_type="model/obj" file="textured_objs/original_88.obj"/>
+    <mesh name="original_96" content_type="model/obj" file="textured_objs/original_96.obj"/>
+    <mesh name="original_82" content_type="model/obj" file="textured_objs/original_82.obj"/>
+    <mesh name="original_97" content_type="model/obj" file="textured_objs/original_97.obj"/>
+    <mesh name="original_81" content_type="model/obj" file="textured_objs/original_81.obj"/>
+    <mesh name="original_79" content_type="model/obj" file="textured_objs/original_79.obj"/>
+    <mesh name="original_76" content_type="model/obj" file="textured_objs/original_76.obj"/>
+    <mesh name="original_71" content_type="model/obj" file="textured_objs/original_71.obj"/>
+    <mesh name="original_85" content_type="model/obj" file="textured_objs/original_85.obj"/>
+    <mesh name="original_51" content_type="model/obj" file="textured_objs/original_51.obj"/>
+    <mesh name="original_60" content_type="model/obj" file="textured_objs/original_60.obj"/>
+    <mesh name="original_64" content_type="model/obj" file="textured_objs/original_64.obj"/>
+    <mesh name="original_75" content_type="model/obj" file="textured_objs/original_75.obj"/>
+    <mesh name="original_63" content_type="model/obj" file="textured_objs/original_63.obj"/>
+    <mesh name="original_21" content_type="model/obj" file="textured_objs/original_21.obj"/>
+    <mesh name="original_30" content_type="model/obj" file="textured_objs/original_30.obj"/>
+    <mesh name="original_36" content_type="model/obj" file="textured_objs/original_36.obj"/>
+    <mesh name="original_41" content_type="model/obj" file="textured_objs/original_41.obj"/>
+    <mesh name="original_28" content_type="model/obj" file="textured_objs/original_28.obj"/>
+    <mesh name="original_43" content_type="model/obj" file="textured_objs/original_43.obj"/>
+    <mesh name="original_22" content_type="model/obj" file="textured_objs/original_22.obj"/>
+    <mesh name="original_26" content_type="model/obj" file="textured_objs/original_26.obj"/>
+    <mesh name="original_110" content_type="model/obj" file="textured_objs/original_110.obj"/>
+    <mesh name="original_107" content_type="model/obj" file="textured_objs/original_107.obj"/>
+    <mesh name="original_4" content_type="model/obj" file="textured_objs/original_4.obj"/>
+    <mesh name="original_3" content_type="model/obj" file="textured_objs/original_3.obj"/>
+    <mesh name="original_33" content_type="model/obj" file="textured_objs/original_33.obj"/>
+    <mesh name="original_44" content_type="model/obj" file="textured_objs/original_44.obj"/>
+    <mesh name="original_112" content_type="model/obj" file="textured_objs/original_112.obj"/>
+    <mesh name="original_106" content_type="model/obj" file="textured_objs/original_106.obj"/>
+    <mesh name="original_16" content_type="model/obj" file="textured_objs/original_16.obj"/>
+    <mesh name="original_109" content_type="model/obj" file="textured_objs/original_109.obj"/>
+    <mesh name="original_13" content_type="model/obj" file="textured_objs/original_13.obj"/>
+    <mesh name="original_9" content_type="model/obj" file="textured_objs/original_9.obj"/>
+    <mesh name="original_45" content_type="model/obj" file="textured_objs/original_45.obj"/>
+    <mesh name="original_35" content_type="model/obj" file="textured_objs/original_35.obj"/>
+    <mesh name="original_49" content_type="model/obj" file="textured_objs/original_49.obj"/>
+    <mesh name="original_39" content_type="model/obj" file="textured_objs/original_39.obj"/>
+    <mesh name="original_5" content_type="model/obj" file="textured_objs/original_5.obj"/>
+    <mesh name="original_114" content_type="model/obj" file="textured_objs/original_114.obj"/>
+    <mesh name="original_54" content_type="model/obj" file="textured_objs/original_54.obj"/>
+    <mesh name="original_27" content_type="model/obj" file="textured_objs/original_27.obj"/>
+    <mesh name="original_55" content_type="model/obj" file="textured_objs/original_55.obj"/>
+    <mesh name="original_113" content_type="model/obj" file="textured_objs/original_113.obj"/>
+    <mesh name="original_111" content_type="model/obj" file="textured_objs/original_111.obj"/>
+    <mesh name="original_6" content_type="model/obj" file="textured_objs/original_6.obj"/>
+    <mesh name="original_31" content_type="model/obj" file="textured_objs/original_31.obj"/>
+    <mesh name="original_37" content_type="model/obj" file="textured_objs/original_37.obj"/>
+    <mesh name="original_48" content_type="model/obj" file="textured_objs/original_48.obj"/>
+    <mesh name="original_15" content_type="model/obj" file="textured_objs/original_15.obj"/>
+    <mesh name="original_56" content_type="model/obj" file="textured_objs/original_56.obj"/>
+    <mesh name="original_108" content_type="model/obj" file="textured_objs/original_108.obj"/>
+    <mesh name="original_23" content_type="model/obj" file="textured_objs/original_23.obj"/>
+    <mesh name="original_58" content_type="model/obj" file="textured_objs/original_58.obj"/>
+    <mesh name="original_11" content_type="model/obj" file="textured_objs/original_11.obj"/>
+    <mesh name="original_38" content_type="model/obj" file="textured_objs/original_38.obj"/>
+    <mesh name="original_34" content_type="model/obj" file="textured_objs/original_34.obj"/>
+    <mesh name="original_18" content_type="model/obj" file="textured_objs/original_18.obj"/>
+    <mesh name="original_25" content_type="model/obj" file="textured_objs/original_25.obj"/>
+    <mesh name="original_17" content_type="model/obj" file="textured_objs/original_17.obj"/>
+    <mesh name="original_73" content_type="model/obj" file="textured_objs/original_73.obj"/>
+    <mesh name="original_12" content_type="model/obj" file="textured_objs/original_12.obj"/>
+    <mesh name="original_42" content_type="model/obj" file="textured_objs/original_42.obj"/>
+    <mesh name="original_24" content_type="model/obj" file="textured_objs/original_24.obj"/>
+    <mesh name="original_20" content_type="model/obj" file="textured_objs/original_20.obj"/>
+    <mesh name="original_32" content_type="model/obj" file="textured_objs/original_32.obj"/>
+    <mesh name="original_47" content_type="model/obj" file="textured_objs/original_47.obj"/>
+    <mesh name="original_7" content_type="model/obj" file="textured_objs/original_7.obj"/>
+    <mesh name="original_1" content_type="model/obj" file="textured_objs/original_1.obj"/>
+    <mesh name="original_10" content_type="model/obj" file="textured_objs/original_10.obj"/>
+    <mesh name="original_14" content_type="model/obj" file="textured_objs/original_14.obj"/>
+    <mesh name="original_19" content_type="model/obj" file="textured_objs/original_19.obj"/>
+    <mesh name="original_40" content_type="model/obj" file="textured_objs/original_40.obj"/>
+    <mesh name="original_46" content_type="model/obj" file="textured_objs/original_46.obj"/>
+    <mesh name="original_57" content_type="model/obj" file="textured_objs/original_57.obj"/>
+  </asset>
+  <worldbody>
+    <body name="base">
+      <body name="link_2" quat="0.5 0.5 -0.5 -0.5">
+        <geom type="mesh" mesh="original_21"/>
+        <geom type="mesh" mesh="original_30"/>
+        <geom type="mesh" mesh="original_36"/>
+        <geom type="mesh" mesh="original_41"/>
+        <geom type="mesh" mesh="original_28"/>
+        <geom type="mesh" mesh="original_43"/>
+        <geom type="mesh" mesh="original_22"/>
+        <geom type="mesh" mesh="original_26"/>
+        <geom type="mesh" mesh="original_110"/>
+        <geom type="mesh" mesh="original_107"/>
+        <geom type="mesh" mesh="original_4"/>
+        <geom type="mesh" mesh="original_3"/>
+        <geom type="mesh" mesh="original_33"/>
+        <geom type="mesh" mesh="original_44"/>
+        <geom type="mesh" mesh="original_112"/>
+        <geom type="mesh" mesh="original_106"/>
+        <geom type="mesh" mesh="original_16"/>
+        <geom type="mesh" mesh="original_109"/>
+        <geom type="mesh" mesh="original_13"/>
+        <geom type="mesh" mesh="original_9"/>
+        <geom type="mesh" mesh="original_45"/>
+        <geom type="mesh" mesh="original_35"/>
+        <geom type="mesh" mesh="original_49"/>
+        <geom type="mesh" mesh="original_39"/>
+        <geom type="mesh" mesh="original_5"/>
+        <geom type="mesh" mesh="original_114"/>
+        <geom type="mesh" mesh="original_54"/>
+        <geom type="mesh" mesh="original_27"/>
+        <geom type="mesh" mesh="original_55"/>
+        <geom type="mesh" mesh="original_113"/>
+        <geom type="mesh" mesh="original_111"/>
+        <geom type="mesh" mesh="original_6"/>
+        <geom type="mesh" mesh="original_31"/>
+        <geom type="mesh" mesh="original_37"/>
+        <geom type="mesh" mesh="original_48"/>
+        <geom type="mesh" mesh="original_15"/>
+        <geom type="mesh" mesh="original_56"/>
+        <geom type="mesh" mesh="original_108"/>
+        <geom type="mesh" mesh="original_23"/>
+        <geom type="mesh" mesh="original_58"/>
+        <geom type="mesh" mesh="original_11"/>
+        <geom type="mesh" mesh="original_38"/>
+        <geom type="mesh" mesh="original_34"/>
+        <geom type="mesh" mesh="original_18"/>
+        <geom type="mesh" mesh="original_25"/>
+        <geom type="mesh" mesh="original_17"/>
+        <geom type="mesh" mesh="original_73"/>
+        <geom type="mesh" mesh="original_12"/>
+        <geom type="mesh" mesh="original_42"/>
+        <geom type="mesh" mesh="original_24"/>
+        <geom type="mesh" mesh="original_20"/>
+        <geom type="mesh" mesh="original_32"/>
+        <geom type="mesh" mesh="original_47"/>
+        <geom type="mesh" mesh="original_7"/>
+        <geom type="mesh" mesh="original_1"/>
+        <geom type="mesh" mesh="original_10"/>
+        <geom type="mesh" mesh="original_14"/>
+        <geom type="mesh" mesh="original_19"/>
+        <geom type="mesh" mesh="original_40"/>
+        <geom type="mesh" mesh="original_46"/>
+        <geom type="mesh" mesh="original_57"/>
+        <body name="link_1_helper" pos="0.00797 0 0.135871">
+          <inertial pos="0 0 0" mass="1e-06" diaginertia="1e-10 1e-10 1e-10"/>
+          <joint name="joint_4" pos="0 0 0" axis="0 1 0" type="slide" range="0 0.02"/>
+          <body name="link_1">
+            <joint name="joint_1" pos="0 0 0" axis="0 -1 0"/>
+            <geom pos="-0.00797 0 -0.135871" quat="1 0 0 0" type="mesh" mesh="original_51"/>
+            <geom pos="-0.00797 0 -0.135871" type="mesh" mesh="original_60"/>
+            <geom pos="-0.00797 0 -0.135871" quat="1 0 0 0" type="mesh" mesh="original_64"/>
+            <geom pos="-0.00797 0 -0.135871" quat="1 0 0 0" type="mesh" mesh="original_75"/>
+            <geom pos="-0.00797 0 -0.135871" quat="1 0 0 0" type="mesh" mesh="original_63"/>
+            <body name="link_0_helper" pos="-2.91768e-07 0 -5.57452e-07">
+              <inertial pos="0 0 0" mass="1e-06" diaginertia="1e-10 1e-10 1e-10"/>
+              <joint name="joint_3" pos="0 0 0" axis="0 -1 0" type="slide" range="0 0.09"/>
+              <body name="link_0">
+                <joint name="joint_0" pos="0 0 0" axis="0 1 0"/>
+                <geom pos="-0.00796971 0 -0.13587" type="mesh" mesh="original_90"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_116"/>
+                <geom pos="-0.00796971 0 -0.13587" type="mesh" mesh="original_99"/>
+                <geom pos="-0.00796971 0 -0.13587" type="mesh" mesh="original_100"/>
+                <geom pos="-0.00796971 0 -0.13587" type="mesh" mesh="original_101"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_66"/>
+                <geom pos="-0.00796971 0 -0.13587" type="mesh" mesh="original_68"/>
+                <geom pos="-0.00796971 0 -0.13587" type="mesh" mesh="original_93"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_69"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_89"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_77"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_80"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_78"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_83"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_87"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_84"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_86"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_65"/>
+                <geom pos="-0.00796971 0 -0.13587" type="mesh" mesh="original_70"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_50"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_88"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_96"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_82"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_97"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_81"/>
+                <geom pos="-0.00796971 0 -0.13587" type="mesh" mesh="original_79"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_76"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_71"/>
+                <geom pos="-0.00796971 0 -0.13587" quat="1 0 0 0" type="mesh" mesh="original_85"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

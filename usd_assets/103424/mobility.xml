@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mujoco model="partnet_ubd3b13b1-40b1-482c-86bb-5a92603291a2">
+  <compiler angle="radian"/>
+  <asset>
+    <mesh name="original_7" content_type="model/obj" file="textured_objs/original_7.obj"/>
+    <mesh name="original_8" content_type="model/obj" file="textured_objs/original_8.obj"/>
+    <mesh name="original_6" content_type="model/obj" file="textured_objs/original_6.obj"/>
+    <mesh name="original_3" content_type="model/obj" file="textured_objs/original_3.obj"/>
+    <mesh name="original_2" content_type="model/obj" file="textured_objs/original_2.obj"/>
+  </asset>
+  <worldbody>
+    <body name="base">
+      <body name="link_2" quat="0.5 0.5 -0.5 -0.5">
+        <geom type="mesh" mesh="original_3"/>
+        <geom type="mesh" mesh="original_2"/>
+        <body name="link_1_helper" pos="-0.00156334 0 -0.0127257">
+          <inertial pos="0 0 0" mass="1e-06" diaginertia="1e-10 1e-10 1e-10"/>
+          <joint name="joint_4" pos="0 0 0" axis="0 1 0" type="slide" range="0 0.02"/>
+          <body name="link_1">
+            <joint name="joint_1" pos="0 0 0" axis="0 1 0"/>
+            <geom pos="0.00156334 0 0.0127257" quat="1 0 0 0" type="mesh" mesh="original_6"/>
+            <body name="link_0_helper" pos="-1.64775e-07 0 -2.132e-07">
+              <inertial pos="0 0 0" mass="1e-06" diaginertia="1e-10 1e-10 1e-10"/>
+              <joint name="joint_3" pos="0 0 0" axis="0 -1 0" type="slide" range="0 0.04"/>
+              <body name="link_0">
+                <joint name="joint_0" pos="0 0 0" axis="0 1 0"/>
+                <geom pos="0.0015635 0 0.0127259" quat="1 0 0 0" type="mesh" mesh="original_7"/>
+                <geom pos="0.0015635 0 0.0127259" quat="1 0 0 0" type="mesh" mesh="original_8"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

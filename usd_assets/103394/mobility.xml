@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mujoco model="partnet_a248bd23-afc1-495d-8576-762a182adb2e-2">
+  <compiler angle="radian"/>
+  <asset>
+    <mesh name="original_4" content_type="model/obj" file="textured_objs/original_4.obj"/>
+    <mesh name="original_8" content_type="model/obj" file="textured_objs/original_8.obj"/>
+    <mesh name="original_6" content_type="model/obj" file="textured_objs/original_6.obj"/>
+    <mesh name="original_3" content_type="model/obj" file="textured_objs/original_3.obj"/>
+    <mesh name="original_16" content_type="model/obj" file="textured_objs/original_16.obj"/>
+    <mesh name="original_13" content_type="model/obj" file="textured_objs/original_13.obj"/>
+    <mesh name="original_15" content_type="model/obj" file="textured_objs/original_15.obj"/>
+    <mesh name="original_11" content_type="model/obj" file="textured_objs/original_11.obj"/>
+    <mesh name="original_12" content_type="model/obj" file="textured_objs/original_12.obj"/>
+    <mesh name="original_7" content_type="model/obj" file="textured_objs/original_7.obj"/>
+    <mesh name="original_10" content_type="model/obj" file="textured_objs/original_10.obj"/>
+  </asset>
+  <worldbody>
+    <body name="base">
+      <body name="link_2" quat="0.5 0.5 -0.5 -0.5">
+        <geom type="mesh" mesh="original_16"/>
+        <geom type="mesh" mesh="original_13"/>
+        <geom type="mesh" mesh="original_15"/>
+        <geom type="mesh" mesh="original_11"/>
+        <geom type="mesh" mesh="original_12"/>
+        <geom type="mesh" mesh="original_7"/>
+        <geom type="mesh" mesh="original_10"/>
+        <body name="link_1_helper" pos="-0.0057798 7.59569e-07 -0.00564653">
+          <inertial pos="0 0 0" mass="1e-06" diaginertia="1e-10 1e-10 1e-10"/>
+          <joint name="joint_4" pos="0 0 0" axis="0.000191599 1 -6.16015e-05" type="slide" range="0 0.16"/>
+          <body name="link_1">
+            <joint name="joint_1" pos="0 0 0" axis="0.000191599 1 -6.16015e-05"/>
+            <geom pos="0.0057798 -7.59569e-07 0.00564653" quat="1 0 0 0" type="mesh" mesh="original_6"/>
+            <geom pos="0.0057798 -7.59569e-07 0.00564653" quat="1 0 0 0" type="mesh" mesh="original_3"/>
+            <body name="link_0_helper" pos="-6.31106e-05 -7.59569e-07 -0.000132254">
+              <inertial pos="0 0 0" mass="1e-06" diaginertia="1e-10 1e-10 1e-10"/>
+              <joint name="joint_3" pos="0 0 0" axis="0 -1 0" type="slide" range="0 0.07"/>
+              <body name="link_0">
+                <joint name="joint_0" pos="0 0 0" axis="0 1 0"/>
+                <geom pos="0.00584291 0 0.00577878" quat="1 0 0 0" type="mesh" mesh="original_4"/>
+                <geom pos="0.00584291 0 0.00577878" quat="1 0 0 0" type="mesh" mesh="original_8"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

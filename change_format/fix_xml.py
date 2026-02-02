@@ -22,23 +22,40 @@ def update_mjcf_file_paths_auto(xml_file_path: str, output_file_path: str | None
     with open(xml_file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # 找到第一个包含 '/objs/' 的 file=".../objs/..." 路径并提取前缀
-    m = re.search(r'file="([^"]*/objs/)([^"]+)"', content)
+    # 找到第一个包含 '/textured_objs/' 或 '/objs/' 的 file=".../textured_objs/..." 路径并提取前缀
+    m = re.search(r'file="([^"]*/textured_objs/)([^"]+)"', content)
+    prefix_kind = "textured_objs" if m else None
     if not m:
-        print("未在文件中找到任何包含 '/objs/' 的 mesh 路径。无需替换。")
-        return content
+        m = re.search(r'file="([^"]*/objs/)([^"]+)"', content)
+        prefix_kind = "objs" if m else None
 
-    detected_prefix = m.group(1)  # e.g. /home/blackbird/GYH/.../objs/
-    print(f"检测到的 objs 前缀: '{detected_prefix}'")
+    if m:
+        detected_prefix = m.group(1)  # e.g. /home/xxx/.../textured_objs/
+        print(f"检测到的路径前缀: '{detected_prefix}'")
 
-    # 构造针对该前缀的替换正则：只替换以检测到的前缀开头的路径
-    # 使用 re.escape 确保前缀里的特殊字符被正确转义
-    pref_escaped = re.escape(detected_prefix)
-    pattern = rf'file="{pref_escaped}([^"]+)"'
+        # 构造针对该前缀的替换正则：只替换以检测到的前缀开头的路径
+        # 使用 re.escape 确保前缀里的特殊字符被正确转义
+        pref_escaped = re.escape(detected_prefix)
+        pattern = rf'file="{pref_escaped}([^"]+)"'
 
-    # 替换为相对路径 file="objs/<name>"
-    new_content, nsub = re.subn(pattern, r'file="objs/\1"', content)
-    print(f"已替换 {nsub} 处匹配到的路径（基于检测到的前缀）。")
+        rel_dir = "textured_objs" if prefix_kind == "textured_objs" else "objs"
+        new_content, nsub = re.subn(pattern, rf'file="{rel_dir}/\1"', content)
+        print(f"已替换 {nsub} 处匹配到的路径（基于检测到的前缀）。")
+    else:
+        # 若已是相对路径，则在 textured_objs 存在且 objs 不存在时做一次替换
+        if 'file="objs/' in content:
+            base_dir = os.path.dirname(os.path.abspath(xml_file_path))
+            has_textured = os.path.isdir(os.path.join(base_dir, "textured_objs"))
+            has_objs = os.path.isdir(os.path.join(base_dir, "objs"))
+            if has_textured and not has_objs:
+                new_content, nsub = re.subn(r'file="objs/([^"]+)"', r'file="textured_objs/\1"', content)
+                print(f"已将相对路径 objs/ 替换为 textured_objs/，共 {nsub} 处。")
+            else:
+                print("未在文件中找到任何包含绝对 '/objs/' 或 '/textured_objs/' 的 mesh 路径。无需替换。")
+                return content
+        else:
+            print("未在文件中找到任何包含绝对 '/objs/' 或 '/textured_objs/' 的 mesh 路径。无需替换。")
+            return content
 
     # 如果某些路径使用不同的前缀（例如多个不同根），可额外再做一次更广泛的替换（可选）
     # 以下代码被注释掉：若需要，也可以启用，将所有含 '/objs/' 的绝对路径一并替换为相对路径

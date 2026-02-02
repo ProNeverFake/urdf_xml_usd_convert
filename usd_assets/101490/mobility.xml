@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mujoco model="partnet_5ca994bd512be485db3bac7ad77ae88e">
+  <compiler angle="radian"/>
+  <asset>
+    <mesh name="original_2" content_type="model/obj" file="textured_objs/original_2.obj"/>
+    <mesh name="original_3" content_type="model/obj" file="textured_objs/original_3.obj"/>
+    <mesh name="original_4" content_type="model/obj" file="textured_objs/original_4.obj"/>
+    <mesh name="original_1" content_type="model/obj" file="textured_objs/original_1.obj"/>
+  </asset>
+  <worldbody>
+    <body name="base">
+      <body name="link_1" quat="0.5 0.5 -0.5 -0.5">
+        <geom type="mesh" mesh="original_1"/>
+        <body name="link_0_helper" pos="-0.00875506 0 -0.0137057">
+          <inertial pos="0 0 0" mass="1e-06" diaginertia="1e-10 1e-10 1e-10"/>
+          <joint name="joint_2" pos="0 0 0" axis="0 -1 0" type="slide" range="0 0.096"/>
+          <body name="link_0">
+            <joint name="joint_0" pos="0 0 0" axis="0 1 0"/>
+            <geom pos="0.00875506 0 0.0137057" quat="1 0 0 0" type="mesh" mesh="original_2"/>
+            <geom pos="0.00875506 0 0.0137057" quat="1 0 0 0" type="mesh" mesh="original_3"/>
+            <geom pos="0.00875506 0 0.0137057" quat="1 0 0 0" type="mesh" mesh="original_4"/>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

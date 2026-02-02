@@ -1,0 +1,44 @@
+#usda 1.0
+(
+    defaultPrim = "mobility"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "mobility" (
+    variants = {
+        string Physics = "PhysX"
+        string Sensor = "Sensors"
+    }
+    prepend variantSets = ["Physics", "Sensor"]
+)
+{
+    variantSet "Physics" = {
+        "None" (
+            prepend references = @configuration/mobility_base.usd@
+        ) {
+            over "joints" (
+                active = false
+            )
+            {
+            }
+
+        }
+        "PhysX" (
+            prepend payload = @configuration/mobility_physics.usd@
+        ) {
+
+        }
+    }
+    variantSet "Sensor" = {
+        "None" {
+
+        }
+        "Sensors" (
+            prepend payload = @configuration/mobility_sensor.usd@
+        ) {
+
+        }
+    }
+}
+
